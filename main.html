@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kill the monster</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <h1>
+            Kill The Monster
+        </h1>
+    </header>
+<br>
+<div class="superDiv">
+
+    <div class="mainDiv">
+
+        <div class="monsterDiv">
+            <div><p class="pDiv">Monster Health</p></div>
+            <div class="monsterHealthBar">
+                <div class="monsterHealth" id="monsterBar"></div>
+            </div>
+        </div>
+
+        <div class="myDiv">
+            <div><p class="pDiv">Your Health</p></div>
+            <div class="myHealthBar">
+                <div class="myHealth" id="myBar" ></div>
+            </div>
+        </div>
+        
+    </div>
+
+      <br>
+
+    <div class="btnDiv" id="btnId">
+      <button class="btnStyle" onclick="attack()">Attack</button> 
+      <button class="btnStyle" id="btnSpecialAttack" onclick="specialAttack()">Special Attack</button> 
+      <button class="btnStyle" id="btn" onclick="heal()">Heal</button> 
+      <button class="btnStyle" onclick="giveUp()">Give Up</button> 
+    </div>
+
+    <div class="startDiv" id="startId" style="display:none">
+        <h1 style="background-color:cornflowerblue ;">Game Over</h1>
+        <h2 id="winner"></h2>
+        <button class="btnStyle" onclick="startGame()" >Start New Game</button> 
+    </div>
+
+    <div class="scoreDiv" id="score">
+        <h1>Battle Log</h1>
+    </div>
+    
+</div>
+
+      <script src="functions.js"></script> 
+
+</body>
+</html>
